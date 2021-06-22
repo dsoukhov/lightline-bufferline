@@ -190,7 +190,7 @@ endfunction
 function! s:delete_nth_buffer(n)
   let l:buffer = s:get_buffer_for_ordinal_number(a:n)
   if l:buffer >= 0
-    execute 'bd' . l:buffer
+    execute 'bw' . l:buffer
   endif
 endfunction
 
